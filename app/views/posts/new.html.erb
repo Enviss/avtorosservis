@@ -1,0 +1,22 @@
+# coding: utf-8
+<div class="row">
+  <div class="span9">
+    <%= form_for(@post) do |f| %>
+        <table >
+        <tr>
+        <td><%= f.label :title %>
+        <%= f.text_field :title %> </td>
+
+        <td><%= f.label :url %>
+        <%= f.text_field :url %> </td>
+        </tr>
+        </table>
+        <%= f.label :content %>
+        <%= f.text_area(:content, :size => "100x20") %>
+
+
+          <br>
+        <%= f.submit "Добавить!", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>

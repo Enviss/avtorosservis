@@ -1,0 +1,18 @@
+# coding: utf-8
+<div class="row">
+  <div class="span9">
+    <%= form_for(@post) do |f| %>
+
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+
+        <%= f.label :content %>
+        <%= f.text_area(:content, :size => "100x20") %>
+
+        <%= f.label :url %>
+        <%= f.text_field :url %>
+        <br>
+        <%= f.submit "Обновить!", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="row">
+<div class="navbar-fixed-top header">
+  <div id="logo"><%= link_to(image_tag('header/logo.png',alt: 'АвтоРосСервис', id: 'logo-img'), root_path)%></div>
+  <div class="contact">
+    <strong>Адрес:</strong> г. Самара, ул. Тихвинская, 17 <small><%= link_to("на карте", contact_path) %></small><br>
+    <strong>Телефоны:</strong> (846) 926-16-55, (846) 225-49-89<br>
+    <strong>Время работы:</strong> ежедневно, с 9:00 до 21:00
+  </div>
+  <div class="no-opacity"></div>
+  <div class="my-nav-menu">
+    <div class="nav-menu-text one dropdown">
+      <%= link_to raw("Услуги<b class='caret'></b>"), uslugi_path, type: "button", id: "drop001", role:"button", class:"dropdown-toggle", data:{toggle:"dropdown"} %>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="drop001" style="width: 100px">
+        <li class="f-r"><a href="#">Подвеска автомобиля</a></li>
+        <li><a href="#">Топливная система <br>и система подачи<br> воздуха</a></li>
+        <li><a href="#">Рулевое управление</a></li>
+        <li><a href="#">Тормозная система</a></li>
+        <li><a href="#">Электрика</a></li>
+        <li><a href="#">Оптика</a></li>
+        <li><a href="#">Системы выпуска</a></li>
+        <li class="l-r"><a href="#">Тюнинг</a></li>
+      </ul>
+
+      <!--<div class="rounded">
+        <ul>
+          <li class="f-r"><a href="#">Подвеска автомобиля</a></li>
+          <li><a href="#">Топливная система и система подачи воздуха</a></li>
+          <li><a href="#">Рулевое управление</a></li>
+          <li><a href="#">Тормозная система</a></li>
+          <li><a href="#">Электрика</a></li>
+          <li><a href="#">Оптика</a></li>
+          <li><a href="#">Системы выпуска</a></li>
+          <li class="l-r"><a href="#">Тюнинг</a></li>
+        </ul>
+      </div>-->
+    </div>
+    <div class="nav-menu-text two"><%= link_to('Запчасти', zapchasti_path) %></div>
+    <div class="nav-menu-text three"><%= link_to('Тюнинг', tuning_path) %></div>
+    <div class="nav-menu-text four"><%= link_to('О нас', about_path) %></div>
+    <div class="nav-menu-text five"><%= link_to('Отзывы', feedback_path) %></div>
+    <div class="nav-menu-text six"><%= link_to('Контакты', contact_path) %></div>
+
+  </div>
+
+</div>
+</div>
